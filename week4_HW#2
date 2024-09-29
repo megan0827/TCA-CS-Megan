@@ -1,0 +1,47 @@
+##!. 제목
+Requests 모듈을 활용하여 POST 요청하기
+
+##2. 이름
+최유정 (Megan)
+
+##3. 제출일
+24.09.30 (월)
+
+4. 과제 목표
+POST 요청 이해하기
+
+5. 코드 실행 결과
+실행한 코드: 
+import requests
+
+def post_request_json(url, json_data):
+    try:
+        
+        response = requests.post(url, json=json_data)
+        
+        
+        if response.status_code == 200 or response.status_code == 201:
+            print("요청 성공!")
+            print("응답 데이터:", response.json())  
+        else:
+            print(f"요청 실패, 상태 코드: {response.status_code}")
+    
+    except requests.exceptions.RequestException as e:
+        print(f"요청 중 오류 발생: {e}")
+
+
+url = "https://jsonplaceholder.typicode.com/posts"  
+json_data = {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+}
+
+post_request_json(url, json_data)
+
+실행 결과: 
+요청 중 오류 발생: HTTPSConnectionPool(host='jsonplaceholder.typicode.com', port=443): Max retries exceeded with url: /posts (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f099ab71250>: Failed to establish a new connection: [Errno -3] Try again'))
+
+##6. 문제 해결 과정 및 배운점
+Visualcode를 사용하는 데 어려움이 있어 Python code editor를 사용했고 코드를 작성하는 데 ChatGPT를 사용했습니다. 아직 제대로 이해를 하지 못하고 사용을 제대로 하지 못한 거 같아 아쉬워요. 
+
