@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>About Me</h1>
+<p>This is the picture of my aunt's chihuahua.
+
+<img src=file:///Users/choiyoojung/Desktop/IMG_0700.jpg 
+alt= "chihuahua" >
+
+
+<p> Hobbies</p>
+<ul>
+    <li>Singing at karaoke room</li>
+    <li>Watching movie</li>
+    <li>Playing violin</li>
+    <li>Shopping</li>
+</ul>
+    
+<table>
+  <tr>
+  	<th>Name</th>
+    <th>Age</th>
+    
+  </tr>
+  <tr>
+  	<td>최유정 Megan</td>
+    <td>born in 2008</td>
+    
+  </tr>
+  
+    </tr>
+  <form action="/submit" method="post">
+	<label 
+    
+</body>
+</html>
